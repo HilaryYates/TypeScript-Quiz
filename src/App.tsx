@@ -26,8 +26,8 @@ const App = () => {
       <QuestionCard
         questionNumber={number + 1}
         totalQuestions={TOTAL_QUESTIONS}
-        questions={questions[number].question}
-        answers={questions[number].answer}
+        question={questions[number].question}
+        answers={questions[number].answers}
         userAnswer={userAnswers ? userAnswers[number] : undefined}
         callback={checkAnswer}
       />
